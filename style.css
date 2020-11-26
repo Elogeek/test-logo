@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Sacramento&display=swap');
+
+* {
+    margin-bottom:105px;
+    padding:0;
+    box-sizing: border-box;
+    display:inline-block;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width:100%;
+}
+
+#div1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 39px;
+    color:turquoise;
+    text-align:center;
+    display:inline-block;
+    margin-top: 64px;
+}
+
+span {
+    font-family: 'Abhaya Libre', serif;
+    font-size:1em;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    border: none;
+    width: 33rem;
+    height: 33rem;
+}
+
+.cercle,#cercle2,#cercle3 {
+    position:absolute;
+}
+
+.cercle {
+    height: 280px;
+    width: 280px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#cercle2 {
+    height: 270px;
+    width: 270px;
+    border: 2px solid black;
+    border-radius: 50%;
+    animation-name: rotation-cercle;
+    animation-delay:2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: top left;
+}
+
+#cercle3 {
+    height: 280px;
+    width: 280px;
+    border: 2px solid turquoise;
+    border-radius: 50%;
+    animation-name: rotation-cercle;
+    animation-delay:2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: top right;
+   }
+
+@keyframes rotation-cercle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
